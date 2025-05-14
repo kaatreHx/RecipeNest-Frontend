@@ -1,0 +1,67 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  color: white;
+  font-size: 18px;
+  height: 80px;
+  z-index: 1000; /* This makes sure the navbar stays on top */
+}
+
+
+.logo {
+  font-weight: bold;
+  font-size: 22px;
+  color: white; /* Ensure the logo color is white */
+  font-family: 'Arial', sans-serif; /* Update to your desired font family */
+  text-decoration: none; /* Remove the underline from the link */
+  transition: color 0.3s ease; /* Add smooth transition for color change */
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-btn {
+  background: transparent;
+  border: 1px solid white;
+  padding: 8px 15px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.logo:hover {
+  color: #ff9800; /* Change color on hover, you can adjust this */
+}
+
+/* Add styles for Link inside nav-btn */
+.nav-btn a {
+  color: inherit; /* Inherit color from parent (white) */
+  text-decoration: none; /* Remove underline from Links */
+}
+
+.nav-btn:hover {
+  background: white;
+  color: black;
+}
+
+.register-btn {
+  background: white;
+  color: black;
+}
+
+.register-btn:hover {
+  background: black;
+  color: white;
+}

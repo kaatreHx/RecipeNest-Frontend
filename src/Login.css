@@ -1,0 +1,72 @@
+/* Glassmorphism Login Box */
+  .container {
+    background-color: rgb(70, 70, 70);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    flex-direction: column;
+  }
+  
+  .login-box {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 350px;
+  }
+  
+  h2 {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  /* Input Fields */
+  .input-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+  }
+  
+  /* Button Styling */
+  .login-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .login-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+  }

@@ -1,0 +1,85 @@
+.update-recipe-container {
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 80px auto 0;  /* Add margin-top to avoid content overlap with navbar */
+  }
+  
+  .update-form-container {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .update-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .update-form input,
+  .update-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  
+  .update-form textarea {
+    height: 120px;
+  }
+  
+  .update-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .update-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .recipe-image-container {
+    flex: 1;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .update-recipe-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Image on the left and form on the right for larger screens */
+  .update-recipe-container {
+    flex-direction: row-reverse; /* Changes layout: image on the left, form on the right */
+  }
+  
+  /* Ensure good responsiveness on smaller screens */
+  @media (max-width: 768px) {
+    .update-recipe-container {
+      flex-direction: column;  /* Stack image and form vertically on small screens */
+      padding: 20px;
+    }
+  
+    .recipe-image-container {
+      margin-top: 20px;
+    }
+  }
+  

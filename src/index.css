@@ -1,0 +1,30 @@
+/* General Reset and Fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Full height structure */
+html, body, #root {
+  height: 100%;
+}
+
+/* Body Styling */
+body {
+  background-color: #3f3f3f;
+}
+
+
+/* Root takes full height and allows content flex growth */
+#root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Main grows to fill remaining space */
+main {
+  flex: 1;
+}

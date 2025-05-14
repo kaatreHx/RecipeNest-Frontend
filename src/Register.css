@@ -1,0 +1,103 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-box {
+    background: #555;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 300px;
+}
+
+h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* Input Fields */
+.input-box {
+    margin: 10px 0;
+}
+
+.input-box input,
+.input-box select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: #f5f5f5;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+/* Focus Effect */
+.input-box input:focus,
+.input-box select:focus {
+    border-color: #ff7e5f;
+    background: #fff;
+}
+
+/* Placeholder Styling */
+.input-box input::placeholder,
+.input-box select option {
+    color: #888;
+}
+
+/* Hover Effect for Input Fields */
+.input-box input:hover,
+.input-box select:hover {
+    border-color: #feb47b;
+}
+
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.popup button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background-color: #45a049;
+}

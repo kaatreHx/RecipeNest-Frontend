@@ -1,0 +1,27 @@
+footer {
+  text-align: center;
+  background: #222;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  position: relative; 
+}
+
+.social-icons {
+  margin: 10px 0;
+}
+
+.social-icons svg {
+  margin: 0 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-icons svg:hover {
+  color: #ff7e5f;
+}
+
+footer p {
+  font-size: 14px;
+  margin-top: 5px;
+}
